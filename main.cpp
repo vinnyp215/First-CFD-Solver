@@ -42,19 +42,22 @@ int set_velocity_boundary(u,v){
 }
 
 int set_pressure_boundary(p){
-  p[:, -1] = p[:, -2] # dp/dx = 0 at x = 2
-  p[0, :] = p[1, :]   # dp/dy = 0 at y = 0
-  p[:, 0] = p[:, 1]   # dp/dx = 0 at x = 0
+  p[:, -1] = p[:, -2] // dp/dx = 0 at x = 2
+  p[0, :] = p[1, :]   // dp/dy = 0 at y = 0
+  p[:, 0] = p[:, 1]   // dp/dx = 0 at x = 0
   // Pressure boundary conditions (Dirichlet or "fixed")
-  p[-1, :] = 0        # p = 0 at y = 2
+  p[-1, :] = 0        // p = 0 at y = 2
 
   return p
 }
 
 // Create computational grid
 
+
 // Initialise 
 
+
 // Create Laplacian operator
+
 
 //

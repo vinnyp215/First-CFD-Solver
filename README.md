@@ -26,4 +26,4 @@ The steps contained within the code are:
 
 7. End simulation
 
-
+8. Plot
